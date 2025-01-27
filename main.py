@@ -4,7 +4,6 @@
 # Developed for the Unmasking Chaos artile, https://synaptory.substack.com/p/unmasking-chaos
 
 %matplotlib notebook
-
 import numpy as np
 from scipy.integrate import solve_ivp
 import matplotlib.pyplot as plt
@@ -13,13 +12,13 @@ from mpl_toolkits.mplot3d import Axes3D
 from IPython.display import HTML
 
 import matplotlib as mpl
-mpl.rcParams['animation.embed_limit'] = 10000  # in MB, adjust as needed
+mpl.rcParams['animation.embed_limit'] = 10000  # in MB,
 
-# Gravitational constant (don't use the real one, as it won't work :))
+# Gravitational constant
 G = 1
 
-# Masses (it's easier to have same masses to keep the trajectories within te boundary box
-m1, m2, m3 = 1.0, 1.0, 1.0 
+# Masses
+m1, m2, m3 = 1.0, 1.0, 1.0
 
 # Initial positions (with a small z-offset to ensure 3D variation)
 r1_0 = np.array([-1.0,  0.0,  0.1])
@@ -149,6 +148,6 @@ ani = FuncAnimation(fig, update, frames=len(t_eval), init_func=init, interval=20
 
 plt.show()
 
-# If the interactive plot doesn't appear for some reason, use to_jshtml as a fallback or generage GIF
-# HTML(ani.to_jshtml())
+# If the interactive plot doesn't appear for some reason, use to_jshtml as a fallback:
+HTML(ani.to_jshtml())
 # ani.save('animation.gif', writer='imagemagick', fps=30)
