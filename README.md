@@ -5,7 +5,7 @@ This repository contains a Jupyter Notebook demonstrating how to simulate and an
 - **SciPy** for integrating the differential equations
 - **Matplotlib** for plotting and animation
 
-You can interactively rotate the 3D plot using an interactive backend in Jupyter (e.g., `%matplotlib widget` with the `ipympl` package installed), generate simple video or GIF animation.
+You can interactively rotate the 3D plot using an interactive backend in Jupyter (e.g., `%matplotlib widget` with the `ipympl` package installed), generate a simple video or a GIF animation.
 
 ## Overview
 
